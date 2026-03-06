@@ -128,12 +128,12 @@ li a:hover {
 .letter {
     background: linear-gradient(12deg,black, rgb(64, 37, 64),black
     );
-    padding: 50px; 
-    margin-left: 450;
+    padding: 50px;
+    margin-left: 200px;
     border-style: double;
     border-color: azure;
     border-radius: 50px;
-    margin-right: 450;
+    margin-right: 200px;
     margin-top: 100;
 }
 .letter p{
