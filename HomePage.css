@@ -1,0 +1,145 @@
+body {
+  background: linear-gradient(12deg, red, rgb(0, 0, 0), green);
+  margin: 0%;
+}
+
+.navbar {
+    background-color: rgb(255, 161, 127);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;              /* make the list horizontal */
+    justify-content: flex-end;  /* align items to the right */
+}
+
+h1 {
+    justify-content: left;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(235, 135, 135);
+    border-radius: 100px;
+    border-color: red;
+    border-style: dashed;
+}
+
+/* Make the links inside li fill the box */
+li a {
+    text-decoration: none; /* remove underline */
+    color: black;
+    display: block; /* makes the whole li clickable */
+}
+
+/* Hover effect */
+li a:hover {
+    background-color: rgb(255, 30, 30);
+    color: white;
+}
+/*for pages*/
+.page {
+    text-align: center;
+    margin-top: 122;
+    
+    text-align: center;
+    opacity: 0; /* start invisible */
+    animation: fadeIn 2s forwards; /* fade in over 2 seconds */
+}
+.page h1{
+    color: white;
+}
+.page p{
+    color: white;
+}
+.page h2{
+    color: white;
+}
+
+.qoutes{
+    text-align: center;
+    margin-top: 123px;
+
+}
+.qoutes p {
+    color: white;
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0; /* start invisible */
+    animation: fadeIn 2s forwards; /* fade in over 2 seconds */
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* fully visible */
+    }
+}
+
+/* Gallery container */
+.picture{
+    display: grid; /* makes gallery layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive columns */
+    gap: 15px; /* space between images */
+    padding: 20px;
+}
+
+/* Images */
+/* Gallery container */
+.picture{
+    display: flex;              /* makes images align in one row */
+    gap: 15px;                  /* space between images */
+    overflow-x: auto;           /* allows horizontal scrolling */
+    padding: 20px;
+}
+
+/* Images inside gallery */
+/* Gallery container */
+.picture{
+    display: grid;                     /* enables grid layout */
+    grid-template-columns: repeat(3, 1fr); /* makes 3 columns */
+    gap: 15px;                         /* space between images */
+    
+}
+
+/* Images */
+.picture img{
+    width: 100%;           /* fill the grid column */
+    height: 100%;         /* same height for all images */
+    object-fit: cover;     /* keeps image ratio */
+    border-radius: 10px;   /* rounded corners */
+    transition: transform 0.3s ease;
+    border-color: black;
+    border-style: double;
+    border-width: 5;
+}
+
+/* Hover zoom effect */
+.picture img:hover{
+    transform: scale(1.05);
+}
+
+/*for letter*/
+
+.letter {
+    background: linear-gradient(12deg,black, rgb(64, 37, 64),black
+    );
+    padding: 50px; 
+    margin-left: 450;
+    border-style: double;
+    border-color: azure;
+    border-radius: 50px;
+    margin-right: 450;
+    margin-top: 100;
+}
+.letter p{
+    color: white;
+    align-items: center;
+    opacity: 0; /* start invisible */
+    animation: fadeIn 2s forwards; /* fade in over 2 seconds */
+    
+}

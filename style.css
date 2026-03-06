@@ -1,0 +1,23 @@
+body {
+
+    background-color: aquamarine;
+    font-size: 100px;
+    font-style: italic;
+}
+
+p {
+    width: 30ch;
+    font-family: monospace;
+    margin: 160px 250px;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(30) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+
+    
+}

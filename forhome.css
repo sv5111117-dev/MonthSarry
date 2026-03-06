@@ -1,0 +1,26 @@
+ body {
+            background-color: #de6c6c; /* Light gray background */
+            font-family: 'Courier New', Courier, monospace; /* Monospace font for a typing feel */
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+        }
+        /* Styling for the paragraph with typing effect */
+         p {
+            font-size: 1.5em; /* Larger font for better visibility */
+            color: black; /* Dark gray text color */
+            
+            white-space; /* Keep text on one line */
+            overflow: hidden; /* Hide overflow to create typing illusion */
+            width: 0; /* Start with zero width */
+            animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s ; /* Animations */
+            padding: 100 ;
+            border-color: ;
+        }
+        /* Keyframe animation for typing effect */
+        @keyframes typing {
+            from { width: 0; } /* Start with no width */
+            to { width: 100%; } /* Expand to full width */
+        }

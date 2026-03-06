@@ -1,0 +1,57 @@
+body {
+    min-height: 100;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+
+}
+/* for form */
+form {
+    background-color: rgb(205, 51, 51, 0.5);
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+    gap: 20px;
+    width: 100p;
+    display: flex;
+    bottom: 0%;
+    border-radius: 100px;
+    padding-top: 100;
+    
+}
+
+/*input lines*/
+.input-box input {
+    width: 100p;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-size: 16px;
+}
+h1 {
+    color: white;
+}
+
+
+/* for button design */
+.design {
+    background-color: antiquewhite;
+    border: solid black;
+    width: 400;
+    margin: auto;
+    padding: 30;
+}
+button {
+    width: 300px;
+    color: white;
+    font-size: 30px;
+    background-color: rgb(99, 47, 47);
+    height: 100;
+    border-radius: 70px;
+}
+button:hover {
+    background-color: rgb(49, 29, 29);
+}

@@ -1,0 +1,144 @@
+/* ==========================
+   BODY
+========================== */
+body {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hotpink;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ==========================
+   CONTAINER & LIST
+========================== */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    height: 200px; /* controls default image height */
+    transition: 0.3s;
+    padding: 0;
+    list-style: none;
+}
+
+.container li {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 100px; /* default width of li */
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1.2px solid #eee;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.4), -2px -5px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* ==========================
+   IMAGE
+========================== */
+.container li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* center image */
+    width: 100%;       /* image fills li */
+    height: 100%;      /* image fills li */
+    object-fit: cover; /* prevents stretching */
+    transition: transform 0.3s ease;
+}
+
+/* Optional: zoom effect on hover */
+.container li:hover img {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* ==========================
+   CONTENT OVERLAY
+========================== */
+.container li .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    color: #eee;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 10%, rgba(0,0,0,0) 100%);
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 0.5s ease;
+}
+
+.container li:hover .content {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ==========================
+   TEXT INSIDE CONTENT
+========================== */
+.container span {
+    text-align: center;
+    width: 75%;
+}
+
+.container h2 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 3px;
+    color: #eee;
+}
+
+.container p {
+    font-size: 12px;
+    color: #eee;
+}
+
+/* ==========================
+   HOVER EFFECT ON LIST ITEMS
+========================== */
+.container li:hover {
+    flex: 0 1 260px; /* expanded width on hover */
+    z-index: 10;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+}
+
+/* ==========================
+   IMAGE SIZE ADJUSTMENT
+========================== */
+/* Change width/height here to set default image size */
+.container li {
+    flex: 0 0 120px; /* default width of image container */
+    height: 120px;    /* default height of image container */
+}
+
+.container li img {
+    width: 100%;
+    height: 100%;
+}
